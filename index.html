@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
+  /* NAVIGATION */
+  nav {
+    background-color: #000000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333333;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333333;
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* HOMEPAGE */
+  #home {
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 2px solid #333333;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin-bottom: 25px;
+  }
+
+  #home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  #home p {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /* SECTION HEADINGS */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+
+  /* ABOUT */
+  #about p {
+    font-size: 16px;
+    max-width: 700px;
+  }
+
+  /* PORTFOLIO / PROJECTS */
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .project-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #333333;
+  }
+
+  .project-item:last-child {
+    border-bottom: none;
+  }
+
+  .project-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .project-item p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .project-item a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* SKILLS */
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .skills-list li {
+    padding: 4px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-right: 1px solid #333333;
+  }
+
+  .skills-list li:last-child {
+    border-right: none;
+  }
+
+  /* CONTACT */
+  #contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #contact a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. HOMEPAGE / LANDING PAGE -->
+  <section id="home">
+    <img src="profile.jpg" alt="Profile picture of Lenard A. Ombal" class="profile-pic">
+    <h1>Lenard Amatosa. Ombal</h1>
+    <p>Web Developer &mdash; Student &mdash; Problem Solver</p>
+  </section>
+
+  <!-- 2. ABOUT ME -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is Lenard A. Ombal and I am a student preparing to enter the
+      web development field. I enjoy building websites, solving problems with code,
+      and learning new technologies. This portfolio showcases the skills and projects
+      I have worked on throughout my studies.
+    </p>
+  </section>
+
+  <!-- 3. PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project-list">
+
+      <div class="project-item">
+        <h3>Project One: Personal Blog Website</h3>
+        <p>A simple blog website built using HTML and CSS to practice layout and styling.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Project Two: To-Do List App</h3>
+        <p>A basic to-do list application built with HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Project Three: School Event Landing Page</h3>
+        <p>A landing page created for a school event, focusing on clean layout and navigation.</p>
+        <a href="#">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. SKILLS AND TECHNOLOGIES -->
+  <section id="skills">
+    <h2>Skills and Technologies</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <!-- 5. CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:lenardombal01@gmail.com">lenardombal01@gmail.com</a></p>
+    <p>Phone: 0942-462-5344</p>
+    <p>Location: Metro Manila, Caloocan City, Philippines</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Lenard Amatosa Ombal. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
